@@ -374,6 +374,18 @@
 
 /* Carousel icons */
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    /* background-color: var(--bs-primary); */
     background-color: var(--primary);
+    background-size: 50%;
+    background-position: 50%;
+    /* rounded-circle */
+    border-radius: 50% !important;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+/* Original Style */
+a {
+    color: var(--primary);
+    text-decoration: none !important;
 }
