@@ -1,39 +1,29 @@
-(function ($) {
+(function () {
     "use strict";
 
-    // Spinner
+    /*/ Spinner
     var spinner = function () {
         setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
+            const spinnerElement = document.querySelector('#spinner');
+            if (spinnerElement) {
+                spinnerElement.classList.remove('show');
             }
         }, 1);
     };
-    spinner();
+    spinner();*/
     
-    
-    // Initiate the wowjs
-    // new WOW().init();
-
 
     // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
-            $('.nav-bar').addClass('sticky-top');
-        } else {
-            $('.nav-bar').removeClass('sticky-top');
+    window.addEventListener('scroll', function () {
+        const navBar = document.querySelector('.nav-bar');
+        if (navBar) {
+            if (window.scrollY > 45) {
+                navBar.classList.add('sticky-top');
+            } else {
+                navBar.classList.remove('sticky-top');
+            }
         }
     });
     
-    
-    /*/ Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });*/
-    
-})(jQuery);
+})();
 
