@@ -13,7 +13,7 @@
     
     
     // Initiate the wowjs
-    new WOW().init();
+    // new WOW().init();
 
 
     // Sticky Navbar
@@ -26,14 +26,14 @@
     });
     
     
-    // Back to top button
+    /*/ Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.back-to-top').fadeIn('slow');
         } else {
             $('.back-to-top').fadeOut('slow');
         }
-    });
+    });*/
     
 })(jQuery);
 
